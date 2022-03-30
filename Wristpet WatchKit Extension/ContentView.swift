@@ -13,15 +13,23 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            NavigationView {
+        NavigationView {
                 VStack {
                     Spacer()
                     
-                    Text("You have \(modelData.petsList.count) pets.")
+                    switch modelData.petsList.count {
+                    case 0:
+                        Text("🥲 You haven't any pet...")
+                    case 1:
+                        Text("You have 1 pet.")
+                    default:
+                        Text("You have \(modelData.petsList.count) pets.")
+                        
+                    }
                     
                     Spacer()
                     
-                    NavigationLink("Add Pet", destination: PetsListView().environmentObject(self.modelData))
+                    NavigationLink("Add Pet", destination: PetsListView())
                 }
             }
             
@@ -40,6 +48,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ModelData())
+//            .environmentObject(ModelData())
     }
 }

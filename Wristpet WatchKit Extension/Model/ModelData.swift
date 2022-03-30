@@ -19,10 +19,12 @@ class ModelData: ObservableObject {
         pets.append(Pet(name: "Cat", emoji: "😸", says: "Meow!"))
         pets.append(Pet(name: "Mouse", emoji: "🐭", says: "Squeek!"))
         pets.append(Pet(name: "Bird", emoji: "🦅", says: "Squeek!"))
+        
         pets.append(Pet(name: "Fox", emoji: "🦊", says: "Ring-ding-ding-ding-dingeringeding!"))
         pets.append(Pet(name: "Bear", emoji: "🐻", says: "Bear Says Thanks!"))
         pets.append(Pet(name: "Fish", emoji: "🐠", says: "Blub!"))
         pets.append(Pet(name: "Frog", emoji: "🐸", says: "Quack!"))
+        
         pets.append(Pet(name: "Monkey", emoji: "🦭", says: "Ow Ow Ow!!!"))
         pets.append(Pet(name: "Unicorn", emoji: "🦄", says: "Neigh!"))
         pets.append(Pet(name: "Bee", emoji: "🐝", says: "zzzzzz!"))
