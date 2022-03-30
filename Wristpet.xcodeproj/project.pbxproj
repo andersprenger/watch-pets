@@ -17,6 +17,9 @@
 		7118CFDA27F3978D00521706 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118CFD927F3978D00521706 /* ComplicationController.swift */; };
 		7118CFDC27F3978E00521706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7118CFDB27F3978E00521706 /* Assets.xcassets */; };
 		7118CFDF27F3978E00521706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7118CFDE27F3978E00521706 /* Preview Assets.xcassets */; };
+		7118CFF027F39CED00521706 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118CFEF27F39CED00521706 /* Pet.swift */; };
+		7118CFF227F39DB200521706 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118CFF127F39DB200521706 /* ModelData.swift */; };
+		7118CFF827F3B3E600521706 /* PetsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118CFF727F3B3E600521706 /* PetsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		7118CFDE27F3978E00521706 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7118CFE027F3978E00521706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7118CFE127F3978E00521706 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7118CFEF27F39CED00521706 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		7118CFF127F39DB200521706 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		7118CFF727F3B3E600521706 /* PetsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +126,9 @@
 			children = (
 				7118CFD127F3978D00521706 /* WristpetApp.swift */,
 				7118CFD327F3978D00521706 /* ContentView.swift */,
-				7118CFD527F3978D00521706 /* NotificationController.swift */,
-				7118CFD727F3978D00521706 /* NotificationView.swift */,
+				7118CFF727F3B3E600521706 /* PetsListView.swift */,
+				7118CFF327F3A8F700521706 /* Model */,
+				7118CFF427F3A90C00521706 /* Notification */,
 				7118CFD927F3978D00521706 /* ComplicationController.swift */,
 				7118CFDB27F3978E00521706 /* Assets.xcassets */,
 				7118CFE027F3978E00521706 /* Info.plist */,
@@ -137,6 +144,24 @@
 				7118CFDE27F3978E00521706 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7118CFF327F3A8F700521706 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7118CFEF27F39CED00521706 /* Pet.swift */,
+				7118CFF127F39DB200521706 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7118CFF427F3A90C00521706 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7118CFD527F3978D00521706 /* NotificationController.swift */,
+				7118CFD727F3978D00521706 /* NotificationView.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,11 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7118CFF827F3B3E600521706 /* PetsListView.swift in Sources */,
 				7118CFD627F3978D00521706 /* NotificationController.swift in Sources */,
 				7118CFD427F3978D00521706 /* ContentView.swift in Sources */,
 				7118CFDA27F3978D00521706 /* ComplicationController.swift in Sources */,
+				7118CFF027F39CED00521706 /* Pet.swift in Sources */,
 				7118CFD227F3978D00521706 /* WristpetApp.swift in Sources */,
 				7118CFD827F3978D00521706 /* NotificationView.swift in Sources */,
+				7118CFF227F39DB200521706 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

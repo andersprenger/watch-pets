@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct WristpetApp: App {
+    @StateObject var modelData = ModelData()
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .environmentObject(modelData)
             }
         }
 
